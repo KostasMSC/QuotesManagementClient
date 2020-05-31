@@ -13,6 +13,7 @@ public class QuotesManagementClient {
 			help();
 		} 
 		/*
+		 * 
 		else if (args[0].equals("-stop")) {
 			if (args.length != 1) {
 				help();
