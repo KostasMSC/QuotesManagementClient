@@ -56,6 +56,7 @@ pipeline {
 		stage('Copy client.sh to Production Server') {
 		  steps{
 		    sh "sudo scp -i /home/ubuntu/.ssh/FinalJenkins2.pem client.sh ubuntu@$remoteServer:/home/ubuntu"
+		    sh "sudo ssh -o StrictHostKeyChecking=no -oIdentityFile=/home/ubuntu/.ssh/FinalJenkins2.pem ubuntu@$remoteServer \'sudo chmod 755 client.sh\'"
 		  }
 		}
     }
