@@ -11,7 +11,9 @@ public class QuotesManagementClient {
 
 		if (args.length == 0 || args[0].equals("-help")) {
 			help();
-		} else if (args[0].equals("-stop")) {
+		} 
+		/*
+		else if (args[0].equals("-stop")) {
 			if (args.length != 1) {
 				help();
 			} else {
@@ -36,7 +38,9 @@ public class QuotesManagementClient {
 						}
 				}
 			}
-		} else if (args[0].equals("-list")) {
+		} 
+		*/
+		else if (args[0].equals("-list")) {
 			if (args.length != 1) {
 				help();
 			} else {
@@ -130,7 +134,7 @@ public class QuotesManagementClient {
 	private static void help() {
 		System.out.println("Usage:");
 		System.out.println("    java QuotesManagementClient -help");
-		System.out.println("    java QuotesManagementClient -stop");
+//		System.out.println("    java QuotesManagementClient -stop");
 		System.out.println("    java QuotesManagementClient -list");
 		System.out.println("    java QuotesManagementClient -del <num>");
 		System.out.println("    java QuotesManagementClient -add \"<quote>\" \"<author>\"");
