@@ -55,7 +55,7 @@ pipeline {
 		}
 		stage('Copy client.sh to Production Server') {
 		  steps{
-		    sh "scp -i /home/ubuntu/.ssh/FinalJenkins2.pem client.sh ubuntu@$remoteServer:/home/ubuntu"
+		    sh "sudo scp -i /home/ubuntu/.ssh/FinalJenkins2.pem client.sh ubuntu@$remoteServer:/home/ubuntu"
 		  }
 		}
     }
