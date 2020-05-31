@@ -4,7 +4,7 @@ import java.net.*;
 
 public class QuotesManagementClient {
 
-	private static final String SERVER_HOST = "ec2-3-126-50-207.eu-central-1.compute.amazonaws.com";
+	private static final String SERVER_HOST = "ec2-3-122-223-83.eu-central-1.compute.amazonaws.com";
 	private static final int SERVER_MGT_PORT = 20001;
 
 	public static void main(String[] args) {
