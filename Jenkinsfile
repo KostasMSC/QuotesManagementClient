@@ -1,6 +1,6 @@
 pipeline {
 	environment {
-		remoteServer = ''
+		remoteServer = 'ec2-52-57-80-125.eu-central-1.compute.amazonaws.com'
 		clientImage = "kargyris/client"
 		registryCredential = 'dockerhub'
 		dockerImage = ''
